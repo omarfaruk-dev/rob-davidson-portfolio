@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-family: "Roboto", serif;
+
+}
+
+* {
+    font-family: "Roboto", "Bebas Neue", serif;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    /* max-width: 1440px; */
+
+}
+
+/* shared styles */
+.btn-primary {
+    padding: 18px 55px;
+    border-radius: 6px;
+    background: linear-gradient(0.00deg, rgb(255, 128, 99) -28.333%, rgb(244, 96, 96) 95.833%);
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: #fc3003;
+    cursor: pointer;
+}
+
+
+p {
+    font-family: "Roboto";
+}
+
+/* header styles */
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3C3C3C;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* hero section styles */
+.hero-section {
+    margin-top: 40px 20px;
+    /* padding: 0 100px; */
+    padding-bottom: 100px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section .hero-text {
+    margin-top: 80px;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #363958;
+}
+
+.hero-text h1 span {
+    color: #FF8367;
+}
+
+.hero-text p {
+    font-family: Roboto;
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 35px 0;
+}
+
+.hero-section .hero-image {
+    height: 550px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image img {
+    height: auto;
+    width: 100%;
+}
+
+/* about styles */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    margin-top: 80px;
+}
+
+.about-container .about-image {
+    height: 550px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.about-text h1 {
+    font-family: Bebas Neue;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #363958;
+}
+
+.about-text p {
+    font-family: Roboto;
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 35px 0;
+}
+
+.about-image {
+    height: 550px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.about-image img {
+    height: auto;
+    width: 100%;
+}
+
+/* work section style */
+main {
+    background-color: #F8F9FC;
+}
+
+.work-section {
+    padding: 100px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.work-section .section-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.section-title span {
+    color: #F46060;
+}
+
+.work-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work-card .card {
+    width: 370px;
+    height: 374px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0px 6.58px 19.74px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work-card .card-image {
+    display: flex;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.work-card .card-text h3 {
+    color: rgb(54, 57, 88);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.card-text p {
+    color: rgb(108, 108, 108);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* footer styles */
+footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+footer .footer-banner{
+background: url(../assets/images/blue-shape.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+    .hero-container,
+    .about-container {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .about-text {
+        margin-top: 150px;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        padding: 20px 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 20px 50px;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        padding: 20px 50px;
+    }
+    .work-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* .hero-image {
+        flex-direction: column;
+    } */
+}
